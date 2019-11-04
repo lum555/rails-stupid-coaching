@@ -4,12 +4,15 @@
     <title>RailsStupidCoaching</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="body">
+    <div class="container">
+      <h1>Stupid Coaching</h1>
+      <%= yield %>
+    </div>
   </body>
 </html>
